@@ -1,24 +1,8 @@
-# Python
+# Python compiled files
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+*.pyc
 
 # Virtual Environment
 venv/
@@ -26,31 +10,30 @@ ENV/
 env/
 .venv/
 
-# IDE
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-# Game logs and temporary files
-*.log
+# Game runtime files (not source files)
 game_log.txt
 
-# OpenCV temporary files
-*.tmp
-
-# History and temp files
+# Development history
 .history/
 .claude/
+
+# Large dependency directories we don't want to upload
+/venv/
+/conda/
 .conda/
 
-# Old directories
-/cpp/OpenCV_451
-/py/.idea
-/py/__pycache__
-/java/target/
+# Temporary build files
+*.tmp
+build/
+dist/

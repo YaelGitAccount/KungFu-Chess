@@ -1,0 +1,19 @@
+בהמשך:
+1. בשלב הבא כדאי באמת לעבור למערכת שתייצר את ה־ID (ולהצפין אותו אולי בטוקן).
+
+2. אם את רוצה עיצוב יותר נקי ומודולרי:
+השתמשי במילון של handlers:
+
+python
+Copy code
+handlers = {
+    "move": handle_move,
+    "chat": handle_chat,
+    ...
+}
+
+handler = handlers.get(data["type"])
+if handler:
+    await handler(ws, data)
+
+3. kלהעביר ללוגים את השגיאות   

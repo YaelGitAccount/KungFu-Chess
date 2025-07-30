@@ -1,0 +1,12 @@
+[10:23:08] GAME_START: New game started
+[10:23:17] MOVE: Player 1 moved PB_0 from (1, 0) to (3, 0)
+[10:23:23] MOVE: Player 1 moved PB_0 from (3, 0) to (4, 0)
+[10:23:27] MOVE: Player 1 moved PB_0 from (4, 0) to (5, 0)
+[10:23:32] SCORE: Scores updated - P1: 1, P2: 0
+[10:23:32] CAPTURE: Player 1: PB_0 captured PW_1 at (6, 1)
+[10:23:32] MOVE: Player 1 moved PB_0 from (5, 0) to (6, 1) (captured PW_1)
+[10:23:42] SCORE: Scores updated - P1: 6, P2: 0
+[10:23:42] CAPTURE: Player 1: PB_0 captured RW_0 at (7, 0)
+[10:23:42] MOVE: Player 1 moved PB_0 from (6, 1) to (7, 0) (captured RW_0)
+[10:23:45] RESULT: Player 1 wins! Final scores: P1=6, P2=0
+[10:23:45] GAME_END: Game ended

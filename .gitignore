@@ -1,6 +1,50 @@
+<<<<<<< HEAD
 /cpp/OpenCV_451
 /py/.idea
 /py/__pycache__
 /.vscode
 /java/target/
 /.idea
+=======
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Game runtime files (not source files)
+game_log.txt
+
+# Development history
+.history/
+.claude/
+
+# Large dependency directories we don't want to upload
+/venv/
+/conda/
+.conda/
+
+# Temporary build files
+*.tmp
+build/
+dist/
+>>>>>>> 29e8b1b8a03951bce7ef4916d131276e67692852
+
+server/תיקונים להמשך.txt

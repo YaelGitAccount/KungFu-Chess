@@ -16,7 +16,6 @@ class GameRoom:
         self.queue = asyncio.Queue()
         self.processing_task = asyncio.create_task(self.process_messages())
 #############
-#לבטל אחד מן השניים הבאים
     # def add_client(self, ws):
     #     self.clients.add(ws)
 
@@ -55,9 +54,7 @@ class GameRoom:
             elif msg_type == "resign":
                 await self.broadcast({"type": "game_over", "reason": "resign"}, exclude=player)
 
-            # תוכל להוסיף כאן טיפול לעוד סוגי הודעות כמו: chat, promotion, etc.
             elif msg_type == "join":
-            # הוסף טיפול בהצטרפות
                 await self.broadcast({
                     "type": "player_joined",
                     "player_name": message.get("player_name"),
@@ -65,7 +62,6 @@ class GameRoom:
                 }, exclude=player)
             
             elif msg_type == "chat":
-            # הוסף טיפול בהודעות צ'אט
                 await self.broadcast({
                     "type": "chat",
                     "player_name": message.get("player_name"),
@@ -73,7 +69,7 @@ class GameRoom:
                 }, exclude=player)
             self.queue.task_done()
      
-     #old for players       
+    #old for players       
     # async def broadcast(self, message: str):
     #     for ws in self.players:
     #         if ws.open:
